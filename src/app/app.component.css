@@ -1,0 +1,25 @@
+titulo {
+    height: 60px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    background-color: rgb(255, 169, 45);
+
+}
+
+b{
+    color:  rgb(255, 169, 45);
+    border-bottom: 100%;
+}
+
+.color{
+    background: white;
+}
+
+.borde {
+    border-top: 100px;
+}
