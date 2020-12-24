@@ -1,28 +1,37 @@
 <div class="container">
-  <div class="row justify-content-center color titulo">  
+  <div class="row justify-content-center titulo">  
     <ul class="nav">
-      <span class="navbar-brand col-lg-auto">
-        <img src="../assets/logoadventista.png" height="40px">
+      <span class="navbar-brand d-block">
+        <img class="justify-content-center color" src="../assets/logoadventista.png" height="40px">
       </span>
       <h2>
-        <span class="borde"> <b class="borde"> IGLESIA ADVENTISTA DE PALO VERDE </b> </span>
+        <span> <b> IGLESIA ADVENTISTA DE PALO VERDE </b> </span>
       </h2>      
     </ul>
 </div>
 </div>
-<div class="row justify-content-center bg-secondary"><!--MEUN-->
-  <ul class="nav ">
-    <li class="nav-item text-white">
-      <a class="nav-link text-white" [routerLink]="['/anuncios']" >ANUNCIOS</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link text-white" [routerLink]="['/programas']">PROGRAMAS</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link text-white" [routerLink]="['/participaciones']">ROL DE PARTICIPACIÓN</a>
-    </li>
-  </ul>
-</div>
+<nav class="navbar navbar-expand-md navbar-light">
+  <button class="navbar-toggler" data-target="#menu" data-toggle="collapse" type="button">
+    <span class="navbar-toggler-icon">
+
+    </span>
+  </button>
+  <div class="row justify-content-center bg-secondary  collapse navbar-collapse" id="menu"><!--MEUN-->
+    <ul class="navbar-nav ">
+      <li class="navbar-item text-white">
+        <a class="nav-link text-white" [routerLink]="['/anuncios']" routerLinkActive="active">ANUNCIOS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" [routerLink]="['/programas']" >PROGRAMAS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" [routerLink]="['/participaciones']">ROL DE PARTICIPACIÓN</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
 
 <div class="row"><!--CONTENIDO-->
 

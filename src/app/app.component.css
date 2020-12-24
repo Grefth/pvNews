@@ -20,6 +20,12 @@ b{
     background: white;
 }
 
-.borde {
-    border-top: 100px;
+img {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.color{
+    background:tomato;
 }
