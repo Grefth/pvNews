@@ -1,19 +1,25 @@
-titulo {
-    height: 60px;
+.titulo {    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;    
+    font-size: 3vw;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 a {
+    border: 1vh;
+    margin: 1;
+    padding: 3vh;
     text-decoration: none;
     color: white;
 }
 a:hover{
-    background-color: rgb(255, 169, 45);
-
+    background-color: #ad55c1;
 }
 
 b{
-    color:  rgb(255, 169, 45);
-    border-bottom: 100%;
+    color:  rgb(255, 255, 255);        
 }
 
 .color{
@@ -26,6 +32,53 @@ img {
     margin: 0px;
 }
 
+.estilo-x {
+font-size: calc(1em + 1vw);
+padding: 1em;
+
+}
+
+
+@media only screen and (max-width: 992px) {
+    .navbar-nav{
+        width: 100%;        
+    }
+    .centrar{
+        justify-content: center;
+        display: block;
+
+    }
+    .margen{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#iglesiaText {
+    font-size: 6vw;
+    text-align: center;
+}
+
+.degradadomenu{
+    content: "";
+    width: 100%;
+    min-height: 10vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: ivory;
+    background: linear-gradient(90deg,#52c4df,#ad55c1);
+    opacity: 0.9;
+
+}
+
 .color{
-    background:tomato;
+    color: black;
 }

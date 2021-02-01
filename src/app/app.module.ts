@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AnunciosModule } from './anuncios/anuncios.module';
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { AnunciosModule } from './anuncios/anuncios.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AnunciosModule
+    AnunciosModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

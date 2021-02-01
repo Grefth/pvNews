@@ -1,4 +1,4 @@
 {
     "appService.defaultWebAppToDeploy": "",
-    "appService.deploySubpath": "dist/pvnews"
+    "appService.deploySubpath": "dist\\pvnews"
 }

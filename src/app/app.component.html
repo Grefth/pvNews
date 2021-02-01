@@ -1,40 +1,53 @@
-<div class="container">
-  <div class="row justify-content-center titulo">  
-    <ul class="nav">
-      <span class="navbar-brand d-block">
-        <img class="justify-content-center color" src="../assets/logoadventista.png" height="40px">
-      </span>
-      <h2>
-        <span> <b> IGLESIA ADVENTISTA DE PALO VERDE </b> </span>
-      </h2>      
-    </ul>
-</div>
-</div>
-<nav class="navbar navbar-expand-md navbar-light">
-  <button class="navbar-toggler" data-target="#menu" data-toggle="collapse" type="button">
-    <span class="navbar-toggler-icon">
-
-    </span>
+<nav class="navbar navbar-expand-lg navbar-dark degradadomenu" style="position: relative;">
+  <a class="navbar-brand" [routerLink]="['/anuncios']">IASD</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="row justify-content-center bg-secondary  collapse navbar-collapse" id="menu"><!--MEUN-->
-    <ul class="navbar-nav ">
-      <li class="navbar-item text-white">
-        <a class="nav-link text-white" [routerLink]="['/anuncios']" routerLinkActive="active">ANUNCIOS</a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" [routerLink]="['/anuncios']"
+        routerLinkActive="active">ANUNCIOS</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link text-white" [routerLink]="['/programas']" >PROGRAMAS</a>
+      <li class="nav-item active">
+        <a class="nav-link" [routerLink]="['/programas']" routerLinkActive="active">PROGRAMAS</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link text-white" [routerLink]="['/participaciones']">ROL DE PARTICIPACIÓN</a>
-      </li>
+      <li class="nav-item active">
+        <a class="nav-link" [routerLink]="['/participaciones']" routerLinkActive="active">ROLES DE PARTICIPACIÓN</a>        
+      </li>   
+      <li class="nav-item active">
+        <a class="nav-link" [routerLink]="['/participaciones']" routerLinkActive="active">RECURSOS</a>        
+      </li>     
+    </ul>   
+  </div>
+</nav>
+<nav>
+  <div class="nav-wrapper">
+    <a href="#!" class="brand-logo">Logo</a>
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="sass.html">Sass</a></li>
+      <li><a href="badges.html">Components</a></li>
+      <li><a href="collapsible.html">Javascript</a></li>
+      <li><a href="mobile.html">Mobile</a></li>
     </ul>
   </div>
 </nav>
 
+<ul class="sidenav" id="mobile-demo">
+  <li><a href="sass.html">Sass</a></li>
+  <li><a href="badges.html">Components</a></li>
+  <li><a href="collapsible.html">Javascript</a></li>
+  <li><a href="mobile.html">Mobile</a></li>
+</ul>
+        
 
-
-<div class="row"><!--CONTENIDO-->
+<div class="row">
+  <!--CONTENIDO-->
 
 
 </div>
-<router-outlet></router-outlet>
+<div class="container mx-auto" >
+  <router-outlet></router-outlet>
+</div>

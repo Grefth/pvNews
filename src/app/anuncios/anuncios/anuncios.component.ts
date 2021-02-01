@@ -1,4 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import { Injectable } from "@angular/core";
+
+import { HttpClient } from "@angular/common/http";
+
+
+@Injectable({
+  providedIn: "root"
+})
 
 @Component({
   selector: 'app-anuncios',
@@ -7,9 +15,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AnunciosComponent implements OnInit {
 
-  constructor() { }
+  rutaApi = "https://dog.ceo/api/breeds/image/random";
+  constructor(private http: HttpClient) {}
 
-  ngOnInit(): void {
+  public obtener() {
+    return this.http.get(`${this.rutaApi}/obtenerPersonas.php`);
   }
+
+  
+  ngOnInit(): void {
+    let perro = this.obtener()
+    
+  
+  }
+
+
+  
+  
 
 }
