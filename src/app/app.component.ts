@@ -1,4 +1,6 @@
+import { Reference } from '@angular/compiler/src/render3/r3_ast';
 import { Component } from '@angular/core';
+declare const M:any;
 
 @Component({
   selector: 'app-root',
@@ -14,4 +16,12 @@ export class AppComponent {
   }
   
   
+  ngOnInit(): void {
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems);
+    });
+
+  }
+
 }
