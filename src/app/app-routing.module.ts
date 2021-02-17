@@ -20,9 +20,15 @@ const routes: Routes = [
   {
     path:'participaciones',
     component:ParticipacionesComponent
+  },
+  {
+    path:'**',
+    redirectTo:'Anuncios',
+    pathMatch:'full'
   }
 
-];
+
+]; 
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
