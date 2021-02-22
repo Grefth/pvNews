@@ -1,11 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { Injectable } from "@angular/core";
-
-import { HttpClient } from "@angular/common/http";
-import { stringify } from '@angular/compiler/src/util';
-import { getLocaleDateFormat } from '@angular/common';
-
-
+import { Component, OnInit } from '@angular/core'
+import { Injectable } from "@angular/core"
+import { HttpClient } from "@angular/common/http"
 
 @Injectable({
   providedIn: "root"
@@ -18,26 +13,21 @@ import { getLocaleDateFormat } from '@angular/common';
 })
 export class AnunciosComponent implements OnInit {
 
-  rutaApi = "https://dog.ceo/api/breeds/image/random";
+  rutaApi = "https://dog.ceo/api/breeds/image/random"
+
+  
+  //CONSTRUCTOR
   constructor(private http: HttpClient){}
 
-  public obtener() {
-    return this.http.get(`${this.rutaApi}/obtenerPersonas.php`);
-  }
-
-  
+  //METODOS
   ngOnInit(): void {
-    let perro = this.obtener();
+    let perro = this.obtener()
 
-
-    
-
-    
-    
   }
 
-
-  
-
+  public obtener() {
+    return this.http.get(`${this.rutaApi}/obtenerPersonas.php`)
+  }
 
 }
+
