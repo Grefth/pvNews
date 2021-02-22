@@ -1,8 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { Injectable } from "@angular/core";
-
-import { HttpClient } from "@angular/common/http";
-
+import { Component, OnInit } from '@angular/core'
+import { Injectable } from "@angular/core"
+import { HttpClient } from "@angular/common/http"
 
 @Injectable({
   providedIn: "root"
@@ -15,22 +13,21 @@ import { HttpClient } from "@angular/common/http";
 })
 export class AnunciosComponent implements OnInit {
 
-  rutaApi = "https://dog.ceo/api/breeds/image/random";
-  constructor(private http: HttpClient) {}
-
-  public obtener() {
-    return this.http.get(`${this.rutaApi}/obtenerPersonas.php`);
-  }
+  rutaApi = "https://dog.ceo/api/breeds/image/random"
 
   
+  //CONSTRUCTOR
+  constructor(private http: HttpClient){}
+
+  //METODOS
   ngOnInit(): void {
     let perro = this.obtener()
-    
-  
+
   }
 
-
-  
-  
+  public obtener() {
+    return this.http.get(`${this.rutaApi}/obtenerPersonas.php`)
+  }
 
 }
+

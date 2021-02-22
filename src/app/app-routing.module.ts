@@ -1,17 +1,13 @@
 import { Component, NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AnunciosComponent } from './anuncios/anuncios/anuncios.component';
-import { ProgramasComponent } from './programas/programas/programas.component'
 import { ParticipacionesComponent } from './participaciones/participaciones/participaciones.component';
+import { RecursosComponent } from './recursos/recursos.component';
 
 const routes: Routes = [
   {
     path: '',
     component: AnunciosComponent,
-  },
-  {
-    path:'programas',
-    component:ProgramasComponent
   },
   {
     path:'anuncios',
@@ -20,9 +16,17 @@ const routes: Routes = [
   {
     path:'participaciones',
     component:ParticipacionesComponent
+  },
+  {
+    path:'recursos',
+    component:RecursosComponent
+  },
+  {
+    path:'**',
+    redirectTo:'Anuncios',
+    pathMatch:'full'
   }
-
-];
+]; 
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
