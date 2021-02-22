@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-declare const M:any;
+declare const M: any;
 
 @Component({
   selector: 'app-root',
@@ -7,20 +7,30 @@ declare const M:any;
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'pvnews';
+  titulo = 'Iglesia de Palo Verde';
 
   size = {
     width: window.innerWidth || document.body.clientWidth,
     height: window.innerHeight || document.body.clientHeight
   }
-  
-  
+
+
   ngOnInit(): void {
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
       var elems = document.querySelectorAll('.sidenav');
       var instances = M.Sidenav.init(elems);
     });
-
+    this.cambioTitulo()
+    
   }
+
+  cambioTitulo() {
+    if (document.body.clientWidth < 377) {
+      this.titulo = 'Palo Verde'
+    } else {
+      this.titulo = 'Iglesia de Palo Verde'
+    }
+  }
+
 
 }
