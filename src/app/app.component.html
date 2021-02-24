@@ -1,19 +1,20 @@
-<nav>
-  <div class="nav-wrapper purple lighten-1">
-    <a [routerLink]="['/anuncios']" class="brand-logo  ajustar"><p class="flow-text" (window:resize)="cambioTitulo()">{{titulo}}</p></a>
+<nav class="sujetar-menu">
+  <div class="nav-wrapper degradadomenu">
+    <div class="brand-logo  ajustar-titulo"><p class="flow-text" (window:resize)="cambioTitulo()">{{titulo}}</p></div>
     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down center-align">
       <li><a [routerLink]="['/anuncios']"
         routerLinkActive="active">ANUNCIOS</a></li>
       <li><a [routerLink]="['/participaciones']"
         routerLinkActive="active">ROLES DE PARTICIPACIÓN</a></li>
-      <li><a [routerLink]="['/participaciones']"
+      <li><a [routerLink]="['/recursos']"
         routerLinkActive="active">RECURSOS</a></li>
-      <li ><a ></a>LOGIN</li>
+      <li><a [routerLink]="['/recursos']"
+        routerLinkActive="active">LOGIN</a></li>
     </ul>
   </div>
 </nav>
-<ul class="sidenav" id="mobile-demo">
+<ul class="sidenav " id="mobile-demo">
   <li><a [routerLink]="['/anuncios']"
     routerLinkActive="active">ANUNCIOS</a></li>
   <li><a [routerLink]="['/participaciones']"
@@ -28,7 +29,7 @@
 
 
 </div>
-<div class="container mx-auto" >
+<div class="center-align">
   <router-outlet></router-outlet>
 </div>
 

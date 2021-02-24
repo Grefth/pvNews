@@ -31,6 +31,7 @@ export class ParticipacionesComponent implements OnInit {
     'Ruben Salazar y Eutiminio Gonzalez',
     'Aganetha Dyck y Aracely Melesio']
     dia = 1000*60*60*24
+    contenedor = 'container'
 
   constructor() { }
 
@@ -41,6 +42,9 @@ export class ParticipacionesComponent implements OnInit {
     console.log('Fin del siclo eclesiatico=> ' + finCicloEclesiastico)
     console.log("Esta es la fecha del sabado que entra: " + this.obtenerSiguienteSabado(diaDeHoy))
     console.log("Esta es mes en Indice: " + this.convertirMes(diaDeHoy.getMonth()))
+    this.cambioContenedor()
+    console.log(this.contenedor)
+
 
   }
 
@@ -57,6 +61,17 @@ export class ParticipacionesComponent implements OnInit {
   convertirMes(mes: number) {
     return this.meses[mes]
   }
+
+  cambioContenedor(){
+    if (document.body.clientWidth > 377) {
+      this.contenedor = 'Container'
+    } else {
+      this.contenedor = 'null'
+    }
+  }
+  
 }
 
 //Calcular el numero de sabados en un mes para ponerlos en el rowspan +1
+
+

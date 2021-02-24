@@ -3,5 +3,22 @@ container {
 }
 
 .margen{    
-    padding: 1em;    
+    margin-top: 4em;
+}
+
+.truncar-descripcion{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    overflow: hidden;
+
+}
+
+.negritas{
+    font-weight: 500;
+    width: 100%;
+    font-size: 1.1em;
+    font-family: GillSans, Calibri, Trebuchet, sans-serif;
+    margin:0%;
 }

@@ -1,26 +1,22 @@
-
 a {
     text-decoration: none;
     color: white;
 }
 a:hover{
-    background-color: #ba68c8;
+    background-color: #9a23a5;
+}
+
+.ajustar-titulo{
+    padding-left: 1em;
+}
+
+.sujetar-menu {
+    position: fixed;
+    z-index: 20;
 }
 
 .degradadomenu{
-    content: "";
-    width: 100%;
-    min-height: 10vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-align: center;
-    color: ivory;
-    background: linear-gradient(90deg,#52c4df,#ad55c1);
+    background: linear-gradient(20deg,#9a23a5,#451da5);
     opacity: 0.9;
 
-}
-
-.ajustar{
-    padding-left: 1em;
 }
