@@ -21,7 +21,13 @@ export class AppComponent {
       var instances = M.Sidenav.init(elems);
     });
     this.cambioTitulo()
-    
+
+    //BOTON FLOTANTE
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.fixed-action-btn');
+      var instances = M.FloatingActionButton.init(elems);
+    });
+
   }
 
   cambioTitulo() {
@@ -31,6 +37,8 @@ export class AppComponent {
       this.titulo = 'Iglesia de Palo Verde'
     }
   }
+
+
 
 
 }

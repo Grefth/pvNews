@@ -7,6 +7,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {RecursosModule } from './recursos/recursos.module'
 import { AnunciosModule } from './anuncios/anuncios.module';
+import { LoginModule } from './login/login.module';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { AnunciosModule } from './anuncios/anuncios.module';
     AppRoutingModule,
     AnunciosModule,
     RecursosModule,
+    LoginModule,
     HttpClientModule,
     BrowserAnimationsModule
   ],

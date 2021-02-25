@@ -3,7 +3,7 @@ a {
     color: white;
 }
 a:hover{
-    background-color: #9a23a5;
+    background-color: #9ccc65 ;
 }
 
 .ajustar-titulo{
@@ -16,7 +16,7 @@ a:hover{
 }
 
 .degradadomenu{
-    background: linear-gradient(20deg,#9a23a5,#451da5);
+    background: linear-gradient(20deg,#5ac000  ,#689f38  );
     opacity: 0.9;
 
 }
